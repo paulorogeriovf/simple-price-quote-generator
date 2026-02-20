@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Orçamentos - Hydra</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/logo.jpg" type="image/png" />
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Gerador de Orçamentos Hydra Piscinas</h1>
+      <span>Hydra Piscinas • Uso interno</span>
+    </header>
+
+    <section class="topo">
+      <input type="text" id="nomeCliente" placeholder="👤 Nome do cliente">
+      <input type="number" id="desconto" placeholder="💲 Desconto (%)" min="0" max="100">
+      <input type="text" id="campoBusca" placeholder="🔍 Buscar produto...">
+    </section>
+
+    <section id="produtos"></section>
+
+    <footer class="resumo">
+      <h2>Total: <span>R$ <span id="total">0,00</span></span></h2>
+
+      <div class="acoes">
+        <button id="btnGerar">Gerar Orçamento</button>
+        <button id="btnCopiar">📋 Copiar</button>
+        <button id="btnPDF">📄 Gerar PDF</button>
+      </div>
+    </footer>
+
+    <pre id="resultado"></pre>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

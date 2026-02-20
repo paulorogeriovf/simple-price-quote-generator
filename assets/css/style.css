@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2f7, #f9fbff);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  padding: 20px 25px 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+header span {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Top */
+
+.topo {
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.topo input {
+  padding: 10px 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Produtos */
+
+#produtos {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 1px solid #eee;
+}
+
+.categoria {
+  margin-top: 18px;
+  margin-bottom: 6px;
+  padding: 6px 12px;
+  background: linear-gradient(135deg, #007bff, #0056d2);
+  color: white;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+
+.produto {
+  display: grid;
+  grid-template-columns: 1fr 130px 110px;
+  align-items: center;
+  gap: 12px;
+  padding: 7px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.nome {
+  font-weight: 500;
+}
+
+.preco {
+  text-align: right;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Controles */
+
+.controle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.controle input {
+  width: 55px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.controle button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.controle button:hover {
+  background: #0056b3;
+}
+
+/* Rodapé */
+
+.resumo {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resumo h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.acoes button {
+  padding: 10px 14px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+#btnGerar {
+  background: #007bff;
+  color: white;
+}
+
+#btnCopiar {
+  background: #28a745;
+  color: white;
+}
+
+/* Resultado */
+
+pre {
+  background: #f6f7f9;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 15px;
+  white-space: pre-wrap;
+  font-size: 14px;
+  border: 1px solid #eee;
+}
+
+#btnPDF {
+  background: #6f42c1;
+  color: white;
+  margin-left: 5px;
+}
