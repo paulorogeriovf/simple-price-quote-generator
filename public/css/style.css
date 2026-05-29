@@ -228,14 +228,17 @@ pre {
     grid-template-columns: 1fr;
     gap: 10px;
     padding: 14px 0;
+
+    justify-items: center;
+    text-align: center;
   }
 
   .preco {
-    text-align: left;
+    text-align: center;
   }
 
   .controle {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .resumo {
@@ -268,14 +271,21 @@ pre {
   header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
   }
 
   header h1 {
     font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .topo {
+    gap: 10px;
   }
 
   .acoes {
     flex-direction: column;
+    width: 100%;
   }
 
   .acoes button,
@@ -286,6 +296,7 @@ pre {
 
   .controle {
     width: 100%;
+    justify-content: center;
   }
 
   .controle input {
@@ -299,9 +310,28 @@ pre {
     border-radius: 10px;
     margin-bottom: 10px;
     border: 1px solid #eee;
+
+    justify-items: center;
+    text-align: center;
+  }
+
+  .nome {
+    text-align: center;
+  }
+
+  .preco {
+    text-align: center;
   }
 
   .categoria {
     text-align: center;
+  }
+
+  .resumo h2 {
+    text-align: center;
+  }
+
+  pre {
+    font-size: 13px;
   }
 }
