@@ -59,4 +59,24 @@
     font-size: 15px;
 }
 
+@media (max-width: 600px) {
+
+  .item-produto {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 12px;
+  }
+
+  .item-produto button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  #btnSalvar {
+    width: 100%;
+  }
+}
+
 }
