@@ -132,12 +132,66 @@ document.getElementById("btnGerar").addEventListener("click", () => {
   document.getElementById("resultado").innerText = texto;
 });
 
-document.getElementById("btnCopiar").addEventListener("click", () => {
-  navigator.clipboard.writeText(
-    document.getElementById("resultado").innerText
-  );
-  alert("Orçamento copiado!");
+document.getElementById("btnCopiar").addEventListener("click", async () => {
+
+  const texto = document.getElementById("resultado").innerText;
+
+  if (!texto.trim()) {
+    alert("Nenhum orçamento gerado.");
+    return;
+  }
+
+  try {
+
+    await navigator.clipboard.writeText(texto);
+
+    mostrarSucesso();
+
+  } catch (erro) {
+
+    try {
+
+      const textarea = document.createElement("textarea");
+
+      textarea.value = texto;
+
+      document.body.appendChild(textarea);
+
+      textarea.select();
+
+      document.execCommand("copy");
+
+      document.body.removeChild(textarea);
+
+      mostrarSucesso();
+
+    } catch (erro2) {
+
+      console.error("Erro ao copiar:", erro2);
+
+      alert("Não foi possível copiar.");
+
+    }
+
+  }
+
 });
+
+function mostrarSucesso() {
+
+  const btn = document.getElementById("btnCopiar");
+
+  const textoOriginal = btn.innerHTML;
+
+  btn.innerHTML = "✅ Copiado!";
+
+  setTimeout(() => {
+
+    btn.innerHTML = textoOriginal;
+
+  }, 2000);
+
+}
 
 carregarProdutos();
 
