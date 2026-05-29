@@ -1,0 +1,17 @@
+ # dependências
+node_modules/
+
+# banco de dados
+database/*.bd
+database/*.db
+database/*.sqlite
+
+# variáveis de ambiente
+.env
+
+# logs
+logs/
+*.log
+
+# editor
+.vscode/

@@ -1,0 +1,62 @@
+#btnSalvar {
+  margin-top: 15px;
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#listaProdutos {
+  margin-top: 20px;
+}
+
+.item-produto {
+  display: grid;
+  grid-template-columns: 1fr 140px 120px 180px;
+  gap: 10px;
+
+  align-items: center;
+
+  padding: 12px;
+
+  border-bottom: 1px solid #eee;
+}
+
+.item-produto button {
+  border: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-editar {
+  background: #007bff;
+  color: white;
+}
+
+.btn-excluir {
+  background: #dc3545;
+  color: white;
+}
+
+@media(max-width: 768px) {
+
+  .topo {
+    grid-template-columns: 1fr;
+  }
+
+  .item-produto {
+    grid-template-columns: 1fr;
+  }
+
+  select {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+}
+
+}

@@ -175,3 +175,8 @@ pre {
   color: white;
   margin-left: 5px;
 }
+
+#btnEstoque {
+  background: #ff9800;
+  color: white;
+}
